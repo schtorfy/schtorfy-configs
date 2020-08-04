@@ -1,0 +1,21 @@
+browser "mpv %u0"
+
+auto-reload yes
+reload-time 5
+max-items 0
+
+unbind-key j
+unbind-key J
+unbind-key K
+unbind-key k
+
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key h quit
+bind-key o open-in-browser
+
+macro o set browser "mpv %u" ; open-in-browser ; set browser "w3m %u"
+macro y set browser "w3m %u" ; open-in-browser ; set browser "w3m %u" 
+
+feed-sort-order lastupdated
